@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NPR Bank - Buy a Card</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background: url(card.png) no-repeat center center/cover;
+        }
+        .navbar {
+            background: rgba(0, 0, 50, 0.8);
+            padding: 15px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            color: white;
+        }
+        .navbar a {
+            color: white;
+            margin: 0 15px;
+            text-decoration: none;
+        }
+        .hero {
+            text-align: center;
+            padding: 100px 20px;
+            color: white;
+        }
+        .button {
+            padding: 10px 20px;
+            background: gold;
+            border: none;
+            cursor: pointer;
+        }
+        .card-purchase {
+            text-align: center;
+            padding: 50px;
+            background: rgba(255, 255, 255, 0.9);
+            border-radius: 10px;
+            max-width: 500px;
+            margin: auto;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+        }
+        .card-purchase input, .card-purchase select {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+    <div class="navbar">
+        <h1>NPR Bank</h1>
+    </div>
+    
+    <div class="hero">
+        <h2>Buy a Card</h2>
+        <p>Apply for a new NPR Bank card and enjoy exclusive benefits.</p>
+    </div>
+    
+    <div class="card-purchase">
+        <h3>Apply for a New Card</h3>
+        <label for="card-type">Select Card Type:</label>
+        <select id="card-type">
+            <option value="debit">Debit Card</option>
+            <option value="credit">Credit Card</option>
+            <option value="premium">Premium Card</option>
+        </select>
+        
+        <label for="full-name">Full Name:</label>
+        <input type="text" id="full-name" placeholder="Enter your full name">
+        
+        <label for="dob">Date of Birth:</label>
+        <input type="date" id="dob">
+        
+        <label for="email">Email Address:</label>
+        <input type="email" id="email" placeholder="Enter your email">
+        
+        <label for="phone">Phone Number:</label>
+        <input type="tel" id="phone" placeholder="Enter your phone number">
+        
+        <button class="button">Apply Now</button>
+    </div>
+</body>
+</html>

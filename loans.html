@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loans - NPR BANK</title>
+    <style>
+        /* General Styling */
+        body {
+            font-family: 'Poppins', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4; /* Light gray background */
+            color: #333; /* Dark text color */
+        }
+        /* Navigation Bar */
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background: #0078AA; /* Uniform primary color */
+            padding: 15px 30px;
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+        }
+        .navbar .logo {
+            font-size: 24px;
+            font-weight: bold;
+            color: white; /* White text for logo */
+        }
+        .nav-links {
+            list-style: none;
+            display: flex;
+            padding: 0;
+        }
+        .nav-links li {
+            margin: 0 15px;
+        }
+        .nav-links a {
+            text-decoration: none;
+            color: white; /* White text for links */
+            font-size: 18px;
+            transition: color 0.3s;
+        }
+        .nav-links a:hover {
+            color: #FFD700; /* Highlight color on hover */
+        }
+        /* Marquee Section */
+        .marquee-container {
+            width: 100%;
+            overflow: hidden;
+            background: #FFD700; /* Uniform highlight color */
+            padding: 12px 0;
+        }
+        .marquee-content {
+            display: flex;
+            white-space: nowrap;
+            animation: marquee-scroll 12s linear infinite;
+            font-size: 18px;
+            font-weight: bold;
+            color: #0078AA; /* Primary color for text */
+        }
+        @keyframes marquee-scroll {
+            from { transform: translateX(100%); }
+            to { transform: translateX(-100%); }
+        }
+        /* Loans Section */
+        .loans {
+            padding: 50px;
+            background: white; /* Consistent background */
+            text-align: center;
+        }
+        .loans h2 {
+            font-size: 30px;
+            color: #0078AA; /* Primary color for heading */
+        }
+        .loan-types {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            flex-wrap: wrap;
+            margin-top: 30px;
+        }
+        .loan-box {
+            width: 280px;
+            background: #e3f2fd; /* Light blue background */
+            padding: 25px;
+            border-radius: 10px;
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s, background 0.3s;
+        }
+        .loan-box:hover {
+            transform: translateY(-10px);
+            background: #0078AA; /* Highlight color on hover */
+            color: white; /* White text on hover */
+        }
+        /* Footer */
+        footer {
+            background: #0078AA; /* Uniform primary color */
+            text-align: center;
+            color: white; /* White text for footer */
+            padding: 15px;
+            margin-top: 20px;
+        }
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .navbar {
+                flex-direction: column;
+                text-align: center;
+            }
+            .nav-links {
+                flex-direction: column;
+                margin-top: 10px;
+            }
+            .nav-links li {
+                margin: 10px 0;
+            }
+            .loan-types {
+                flex-direction: column;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <div class="logo">NPR BANK</div>
+        <ul class="nav-links">
+            <li><a href="index.html">Card Details</a></li>
+            <li><a href="about.html">ℹ About Us</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="schemes.html">Schemes</a></li>
+            <li><a href="login.html">Login</a></li>
+        </ul>
+    </nav>
+    <!-- Marquee Section -->
+    <div class="marquee-container">
+        <div class="marquee-content">
+            Welcome to NPR BANK - Your Trusted Financial Partner | Flexible Loan Options | Low Interest Rates
+        </div>
+    </div>
+    <!-- Loans Section -->
+    <section class="loans">
+        <h2>Loan Options</h2>
+        <div class="loan-types">
+            <div class="loan-box">
+                <h3>Personal Loan</h3>
+                <p>Quick approval for personal expenses with low interest rates.</p>
+            </div>
+            <div class="loan-box">
+                <h3>Home Loan</h3>
+                <p>Affordable home loans with flexible repayment options.</p>
+            </div>
+            <div class="loan-box">
+                <h3>Business Loan</h3>
+                <p>Grow your business with tailored loan solutions.</p>
+            </div>
+            <div class="loan-box">
+                <h3>Education Loan</h3>
+                <p>Fund your education with easy repayment terms.</p>
+            </div>
+        </div>
+    </section>
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2025 NPR BANK. All rights reserved.</p>
+    </footer>
+</body>
+</html>
